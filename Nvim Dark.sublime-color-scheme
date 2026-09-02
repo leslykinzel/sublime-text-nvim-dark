@@ -1,0 +1,109 @@
+{
+  "name": "Nvim Dark",
+  "author": "Lesly Kinzel",
+  "variables": {
+    "text": "#e0e2ea",
+    "string": "#b0f2bd",
+    "comment": "#00ff00",
+    "type": "#a6dbff",
+    "function": "#8cf8f7",
+    "green": "#7ee787",
+    "invalid": "#ffa198"
+  },
+  "globals": {
+    "background": "#191A1B",
+    "foreground": "#e0e2ea",
+    "caret": "#fb2bf3",
+    "line_highlight": "#242526",
+    "selection": "#3994BC40",
+    "selection_border": "#3994BC",
+    "inactive_selection": "#2C2D2E",
+    "find_highlight": "#3994BCF0",
+    "guide": "#333536",
+    "active_guide": "#555555"
+  },
+  "rules": [
+    {
+      "name": "Comments",
+      "scope": "comment, punctuation.definition.comment, string.comment",
+      "foreground": "var(comment)"
+    },
+    {
+      "name": "Strings, Regex, Links",
+      "scope": "string, string punctuation.section.embedded source, source.regexp, string.regexp, constant.other.reference.link, string.other.link",
+      "foreground": "var(string)"
+    },
+    {
+      "name": "Function Declarations",
+      "scope": "entity.name.function, entity.name.function.constructor, entity.name.function.destructor",
+      "foreground": "var(function)"
+    },
+    {
+      "name": "Function Calls",
+      "scope": "variable.function, support.function, meta.function-call.generic, meta.function-call.object",
+      "foreground": "var(function)"
+    },
+    {
+      "name": "Built-in Types",
+      "scope": "support.type, storage.type",
+      "foreground": "var(type)"
+    },
+    {
+      "name": "Declaration Keywords (const, var, let, static)",
+      "scope": "keyword.control.var, keyword.control.let, keyword.control.const, storage.modifier",
+      "foreground": "var(type)"
+    },
+    {
+      "name": "Flow Control Keywords (for, while, switch)",
+      "scope": "keyword.control.loop, keyword.control.flow, keyword.control.conditional, keyword.control.switch, keyword.control.catch, keyword.control.throw, keyword.control.try",
+      "foreground": "var(type)"
+    },
+    {
+      "name": "Return/Break Keywords",
+      "scope": "keyword.control.return, keyword.control.break, keyword.control.continue, keyword.control.yield, keyword.control.defer",
+      "foreground": "var(type)"
+    },
+    {
+      "name": "Constants",
+      "scope": "constant.other.placeholder, constant.character, constant, entity.name.constant, variable.other.constant, variable.other.enummember, variable.language",
+      "foreground": "var(text)"
+    },
+    {
+      "name": "Variables",
+      "scope": "entity.name, meta.export.default, meta.definition.variable, variable, variable.other",
+      "foreground": "var(text)"
+    },
+    {
+      "name": "Support, Property Names",
+      "scope": "string variable, support.constant, support.variable",
+      "foreground": "var(type)"
+    },
+    {
+      "name": "Parameters",
+      "scope": "variable.parameter.function, meta.jsx.children, meta.block, meta.tag.attributes, meta.object.member, meta.embedded.expression",
+      "foreground": "var(text)"
+    },
+    {
+      "name": "Tags, Classes",
+      "scope": "entity.name.tag, support.class.component, string.regexp constant.character.escape",
+      "foreground": "var(text)"
+    },
+    {
+      "name": "Invalid, Deprecated, Errors",
+      "scope": "invalid, message.error, brackethighlighter.unmatched",
+      "foreground": "var(invalid)"
+    },
+    {
+      "name": "Markup Inserted (Git)",
+      "scope": "markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted",
+      "foreground": "var(green)",
+      "background": "#04260f"
+    },
+    {
+      "name": "Markup Deleted (Git)",
+      "scope": "markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted",
+      "foreground": "var(invalid)",
+      "background": "#490202"
+    }
+  ]
+}
