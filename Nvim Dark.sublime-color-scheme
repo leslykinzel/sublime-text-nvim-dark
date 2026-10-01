@@ -4,7 +4,7 @@
   "variables": {
     "text": "#e0e2ea",
     "string": "#b0f2bd",
-    "comment": "#00ff00",
+    "comment": "#4b4e53",
     "type": "#a6dbff",
     "function": "#8cf8f7",
     "green": "#7ee787",
@@ -13,7 +13,7 @@
   "globals": {
     "background": "#191A1B",
     "foreground": "#e0e2ea",
-    "caret": "#fb2bf3",
+    "caret": "#8cf8f7",
     "line_highlight": "#242526",
     "selection": "#3994BC40",
     "selection_border": "#3994BC",
